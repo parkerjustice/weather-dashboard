@@ -6,6 +6,7 @@ I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 
 Website :
+https://parkerjustice.github.io/weather-dashboard/
 
 Acceptance 
 GIVEN a weather dashboard with form inputs
