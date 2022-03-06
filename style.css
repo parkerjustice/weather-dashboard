@@ -19,11 +19,7 @@ header h1 {
 }
 
 .row-one {
-    border-radius: 25px;
     background: thistle;
-    padding: 10px;
-    width: 200px;
-    height: 150px;
 }
 
 .insert {
@@ -38,6 +34,19 @@ button {
     color: rgb(0, 54, 75);
     background-color: wheat;
     border-radius: 5px;
-    
+
 }
 
+.row-three {
+    background: thistle;
+}
+
+.forcast1, .forcast2, .forcast3, .forcast4, .forcast5 {
+    border-radius: 25px;
+    background: rgb(211, 144, 211);
+    display: grid;
+    gap: 50px;
+}
+
+h5 {
+}

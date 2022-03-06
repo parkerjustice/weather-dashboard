@@ -16,14 +16,16 @@
 
 
     <div class="row-one">
-        <h3 class="search text-xl"> Search your area: </h3>
-        <div class="insert">
+        <h3 class="search text-xl text-center"> Search your area: </h3>
+        <div class=" text-center insert">
             <input id="enter-area" type="text" class="enter-area" placeholder="Enter your area">
             <div class="area-button">
                 <button class="btn" type="button" id="btn"></button>
             </div>
         </div>
-        <button class="btn" type="button" id="clear-data">Clear All Data</button>
+        <div class="text-center">
+        <button class="btn2" type="button" id="clear-data">Clear All Data</button>
+        </div>
         <form id="data"></form>
     </div>
 
@@ -38,15 +40,50 @@
     </div>
 
     <div class="row-three" id="fiveday">
-        <h3>Your 5 Day Forcast</h3>
+        <h3 class="fiveday text-xl font-bold text-center">Your 5 Day Forcast</h3>
     </div>
-    <div class="row-four">
-        <div class="forcast"></div>
-        <div class="forcast"></div>
-        <div class="forcast"></div>
-        <div class="forcast"></div>
-        <div class="forcast"></div>
+
+    <!-- Was going to use but didnt -->
+<!-- <div class="row-four">
+        <div class="forcast1 text-center text-xl"> 
+            <h5>Day One</h5>
+        </div>
+        <div class="forcast2 text-center text-xl">
+            <h5>Day Two</h5>
+        </div>
+        <div class="forcast3 text-center text-xl">
+            <h5>Day Three</h5>
+        </div>
+        <div class="forcast4 text-center text-xl">
+            <h5>Day Four</h5>
+        </div>
+        <div class="forcast5 text-center text-xl">
+            <h5>Day Five</h5>
+        </div>
     </div>
-</body>
+</body> 
+<!-- the DIV that will contain the widget -->
+<div class="weatherWidget" ></div>
+
+<script>
+   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+   window.weatherWidgetConfig.push({
+       selector:".weatherWidget",
+       apiKey:"DZC66CJ39VR8JJTN69NKN8BZF", //Sign up for your personal key
+       location:"Raleigh, NC", //Enter an address
+       unitGroup:"us", //"us" or "metric"
+       forecastDays:5, //how many days forecast to show
+       title:"Raleigh,NC", //optional title to show in the 
+       showTitle:true, 
+       showConditions:true
+   });
+  
+   (function() {
+   var d = document, s = d.createElement('script');
+   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+   })();
+</script>
 <script src="./script.js"></script>
 </html>
